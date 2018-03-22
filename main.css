@@ -1,8 +1,10 @@
 
 body {
     background-image: url("https://i.imgur.com/4KlODl0.jpg");
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-attachment: fixed;
     background-position: center;
+    height: 200px;
+    width: 200px;
     background-color: #ffffff;
 }

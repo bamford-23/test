@@ -1,5 +1,6 @@
 
 body {
     background-image: url("https://i.imgur.com/4KlODl0.jpg");
+    background-repeat: no-repeat;
     background-color: #cccccc;
 }

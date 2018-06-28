@@ -14,4 +14,4 @@ var footer = document.getElementById('footer');
 var tagScript = document.createElement('script');
 tagScript.src = "//c.fqtag.com/tag/implement-r.js?org=TksRHGen5rmjsG48m9pC&p=bamfordsTestPage&a=testpage&cmp=github&fmt=banner&dmn=http://any.dominayoulike.com/thiswont/doanything&rt=display&sl=1&fq=1";
 
-setTimeout(footer.appendChild(tagScript),1000);
+setTimeout(footer.appendChild(tagScript),3000);

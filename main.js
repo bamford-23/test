@@ -11,14 +11,10 @@ iframe.document.close();
 
 // &rd="+pageUrl+"  - Add this back in after the crapola.
 
-
-
-var footer = document.getElementById('footer');
-var tagScript = document.createElement('script');
-tagScript.src = "//c.fqtag.com/tag/implement-r.js?org=TksRHGen5rmjsG48m9pC&p=bamfordsTestPage&a=testpage&cmp=adframe&fmt=banner&dmn=http://any.dominayoulike.com/thiswont/doanything&rt=display&sl=1&fq=1&ad=adframe";
-
-setTimeout(addscript,3000);
-
 function addscript(){
+  var footer = document.getElementById('footer');
+  var tagScript = document.createElement('script');
+  tagScript.src = "//c.fqtag.com/tag/implement-r.js?org=TksRHGen5rmjsG48m9pC&p=bamfordsTestPage&a=testpage&cmp=adframe&fmt=banner&dmn=http://any.dominayoulike.com/thiswont/doanything&rt=display&sl=1&fq=1&ad=adframe";
   footer.appendChild(tagScript);
 }
+setTimeout(addscript,3000);

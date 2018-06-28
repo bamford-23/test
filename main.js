@@ -13,3 +13,4 @@ iframe.document.close();
 // iframe.contentDocument.body.appendChild(tagScript)
 
 // &rd="+pageUrl+"  - Add this back in after the crapola.
+var footer = document.getElementById('footer');

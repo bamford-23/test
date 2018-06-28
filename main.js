@@ -1,6 +1,6 @@
 // var pageUrl = window.location.href
 
-var iframe = document.getElementById('adframe1');
+var iframe = document.getElementById('drums');
 iframe = iframe.contentWindow || iframe.contentDocument.document || iframe.contentDocument;
 iframe.document.open();
 iframe.document.write('<script src="//c.fqtag.com/tag/implement-r.js?org=TksRHGen5rmjsG48m9pC&p=bamfordsTestPage&a=testpage&cmp=adframe1&fmt=banner&dmn=http://any.dominayoulike.com/thiswont/doanything&rt=display&sl=1&fq=1"></script>');

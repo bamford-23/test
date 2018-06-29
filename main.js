@@ -17,9 +17,4 @@ function addscript(){
   tagScript.src = "//c.fqtag.com/tag/implement-r.js?org=TksRHGen5rmjsG48m9pC&p=bamfordsTestPage&a=testpage&cmp=adframe2&fmt=banner&dmn=http://any.dominayoulike.com/thiswont/doanything&rt=display&sl=1&fq=1&ad=adframe2";
   footer.appendChild(tagScript);
 }
-// setTimeout(addscript,300);
-
-while(!document.querySelector(".aa_container size300x250")) {
-  await new Promise(r => setTimeout(r, 50));
-}
-addscript();
+setTimeout(addscript,200);

@@ -19,7 +19,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://ww
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
   <div width="300" height="50">
-    <script> var loc = "/test/convert"
+    <script> var loc = "/test/convert?clickid="+document.location.search.match('clickId=(.*)&')[1]
     </script>
     <button type="button" onclick=location.href=loc> Click Me!</button>
  <div width="300" height="250">

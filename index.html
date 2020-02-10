@@ -3,7 +3,7 @@
 <head>
   <link rel="stylesheet" href="main.css">
   <script>
-    dataLayer = [{'irclickid' : document.location.search.match('clickId=(.*)&')[1] }];
+    dataLayer = [{'irclickid' : document.location.search.match('clickId=(.*)&?')[1] }];
   </script>
   <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -18,10 +18,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://ww
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P2829LG"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+
   <div width="300" height="50">
-    <script> var loc = "/test/convert?clickid="+document.location.search.match('clickId=(.*)&')[1]
+
+    <button type="button" onclick="switchPage();"> Click Me!</button>
+    <script>
+    function switchPage(){
+      window.location = "/test/convert?clickid="+document.location.search.match('clickId=(.*)&?')[1]
+    }
     </script>
-    <button type="button" onclick=location.href=loc> Click Me!</button>
+
  <div width="300" height="250">
     <iframe id="drums" width="1000" height="800" style="background-image:url(https://i.imgur.com/oJW0Rs4.png)"></iframe>
     <iframe id="adframe1" data-aa='946803' src='//ad.a-ads.com/946803?size=300x250' scrolling='no' style='width:300px; height:250px; border:0px; padding:0;overflow:hidden' allowtransparency='true'></iframe>

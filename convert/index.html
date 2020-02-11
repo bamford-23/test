@@ -34,6 +34,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         irclickid = document.location.search.match('clickId=(.*)&?')[1];
       }
       catch(err){
+        dataLayer.push({'event':'noclickid'})
       }
       finally {
       dataLayer.push({'irclickid':irclickid});

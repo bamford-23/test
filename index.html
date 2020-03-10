@@ -40,10 +40,20 @@
     <button class="button" type="button" onclick="switchPageSale();"> Submit Sale</button>
     <script>
     function switchPageLead(){
-      window.location = "/test/lead_convert?clickId="+document.location.search.match('irclick_id=(.*)&?')[1]
+      try {
+        window.location = "/test/lead_convert?clickId="+document.location.search.match('irclick_id=(.*)&?')[1];
+      }
+      catch(err){
+        window.location = "/test/lead_convert";
+      }
     }
     function switchPageSale(){
-      window.location = "/test/sale_convert?clickId="+document.location.search.match('irclick_id=(.*)&?')[1]
+      try {
+        window.location = "/test/sale_convert?clickId="+document.location.search.match('irclick_id=(.*)&?')[1];
+      }
+      catch(err){
+        window.location = "/test/sale_convert";
+      }
     }
     </script>
 

@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <link rel="stylesheet" href="/main.css">
+  <link rel="stylesheet" href="main.css">
   <script>
     dataLayer = [];
   </script>
@@ -36,10 +36,14 @@
 
   <div width="300" height="50">
 
-    <button class="button" type="button" onclick="switchPage();"> Submit Lead</button>
+    <button class="button" type="button" onclick="switchPageLead();"> Submit Lead</button>
+    <button class="button" type="button" onclick="switchPageSale();"> Submit Sale</button>
     <script>
-    function switchPage(){
+    function switchPageLead(a){
       window.location = "/test/lead_convert?clickId="+document.location.search.match('irclick_id=(.*)&?')[1]
+    }
+    function switchPageSale(a){
+      window.location = "/test/sale_convert?clickId="+document.location.search.match('irclick_id=(.*)&?')[1]
     }
     </script>
 

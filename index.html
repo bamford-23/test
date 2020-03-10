@@ -29,17 +29,17 @@
 <!-- End Google Tag Manager (noscript) -->
 <div class="topnav">
   <a class="active" href="/test">Home</a>
-  <a href="/test/convert">Convert</a>
+  <a href="/test/lead_convert">Convert</a>
   <a href="/test/mobile_test">Mobile Test</a>
 
 </div>
 
   <div width="300" height="50">
 
-    <button type="button" onclick="switchPage();"> Click Me!</button>
+    <button class="button" type="button" onclick="switchPage();"> Submit Lead</button>
     <script>
     function switchPage(){
-      window.location = "/test/convert?clickId="+document.location.search.match('irclick_id=(.*)&?')[1]
+      window.location = "/test/lead_convert?clickId="+document.location.search.match('irclick_id=(.*)&?')[1]
     }
     </script>
 

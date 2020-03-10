@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <link rel="stylesheet" href="/main.css">
+  <!-- <link rel="stylesheet" href="main.css"> -->
   <script>
     dataLayer = [];
   </script>
@@ -14,42 +14,39 @@
 })(window,document,'script','dataLayer','GTM-P2829LG');dataLayer.push({'isConversion':'True'})</script>
   <!-- End Google Tag Manager -->
 
+
+<!-- // UTT Bamford Display -->
+  <!-- <script type="text/javascript"> (function(a,b,c,d,e,f,g){e['ire_o']=c;e[c]=e[c]||function(){(e[c].a=e[c].a||[]).push(arguments)};f=d.createElement(b);g=d.getElementsByTagName(b)[0];f.async=1;f.src=a;g.parentNode.insertBefore(f,g);})('//d.impactradius-event.com/A1188627-e139-438b-a617-ffff0fd9f6541.js','script','ire',document,window); </script> -->
+
 <!-- UTT Bamford Demo -->
   <script type="text/javascript"> (function(a,b,c,d,e,f,g){e['ire_o']=c;e[c]=e[c]||function(){(e[c].a=e[c].a||[]).push(arguments)};f=d.createElement(b);g=d.getElementsByTagName(b)[0];f.async=1;f.src=a;g.parentNode.insertBefore(f,g);})('//d.impactradius-event.com/A2073922-e045-477c-82ed-7910312bdf7465535.js','script','ire',document,window) ; </script>
-<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="/main.css">
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P2829LG" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-<!--  Regext to see if click id exist and then pushing the event to GTM
-
-<div>
-<script type="text/javascript">
-    var irclickid
-    try {
-      irclickid = document.location.search.match('irclick_id=(.*)&?')[1];
-    }
-    catch(err){
-      dataLayer.push({'event':'noclickid'})
-    }
-
-</script> -->
 <div class="topnav">
   <a href="/test">Home</a>
-  <a href="/test/convert">Convert</a>
-  <a class="active" href="/test/mobile_test">Mobile Test</a>
+  <a class="active" href="/test/lead_convert">Convert</a>
+  <a href="/test/mobile_test">Mobile Test</a>
 </div>
+
+  <div>
+  <script type="text/javascript">
+      var irclickid
+      var randid = Math.floor((Math.random() * 100000) + 1)
+      try {
+        irclickid = document.location.search.match('clickId=(.*)&?')[1];
+      }
+      catch(err){
+        dataLayer.push({'event':'noclickid'})
+      }
+
+  </script>
   <h1>
-    Mobile Tests
+    HELLO
   </h1>
-  <ul>
-    <li> <a href="https://app.appsflyer.com/com.wahanda.marketplace?af_siteid=%7Birmpname%7D%26pid%3Dimpactradius_int%26af_click_lookback%3D7d%26clickid%3D%7Bclickid%7D">Android test Treatwell</a> </li>
-    <li> <a href="https://app.appsflyer.com/id814443140?af_siteid=%7Birmpname%7D%26pid%3Dimpactradius_int%26af_click_lookback%3D7d%26clickid%3D%7Bclickid%7D">iOS test Treatwell</a> </li>
-    <li> <a href="https://treatwell.onelink.me/32083905?af_siteid=%7Birmpname%7D%26pid%3Dimpactradius_int%26af_click_lookback%3D7d%26clickid%3D%7Bclickid%7D">Onelink test Treatwell</a> </li>
-
-
-
     <!--
 Impact Universal Tracking Tag required to be installed on the page.
 Removal or modification of this code will disrupt marketing activities. This code is property of Impact, please do not remove or modify without first contacting Impact Technical Services.

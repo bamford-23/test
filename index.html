@@ -39,10 +39,10 @@
     <button class="button" type="button" onclick="switchPageLead();"> Submit Lead</button>
     <button class="button" type="button" onclick="switchPageSale();"> Submit Sale</button>
     <script>
-    function switchPageLead(a){
+    function switchPageLead(){
       window.location = "/test/lead_convert?clickId="+document.location.search.match('irclick_id=(.*)&?')[1]
     }
-    function switchPageSale(a){
+    function switchPageSale(){
       window.location = "/test/sale_convert?clickId="+document.location.search.match('irclick_id=(.*)&?')[1]
     }
     </script>

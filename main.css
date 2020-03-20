@@ -47,6 +47,10 @@ body {
   cursor: pointer;
 }
 
+.sale-button {
+  display: block;
+}
+
 # 770648 {
   border: 2px solid red;
   padding: 15px 32px;

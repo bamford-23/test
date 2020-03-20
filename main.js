@@ -16,4 +16,41 @@ function addscript(){
 }
 setTimeout(addscript,200);
 
+
+// Sale tag functions
+
+  // subTotal
+function sale_sToD() {
+  dataLayer.push({'event':'saleButtonPushed','saleType':"sToD"})
+};
+function sale_sTiTD() {
+  dataLayer.push({'event':'saleButtonPushed','saleType':"sTiTD"})
+};
+function sale_sTiD() {
+  dataLayer.push({'event':'saleButtonPushed','saleType':"sTiD"})
+};
+function sale_sTnD() {
+  dataLayer.push({'event':'saleButtonPushed','saleType':"sTnD"})
+};
+
+
+  // price
+function sale_poD() {
+  dataLayer.push({'event':'saleButtonPushed','saleType':"poD"})
+};
+function sale_piTD() {
+  dataLayer.push({'event':'saleButtonPushed','saleType':"piTD"})
+};
+function sale_piD() {
+  dataLayer.push({'event':'saleButtonPushed','saleType':"piD"})
+};
+function sale_pnD() {
+  dataLayer.push({'event':'saleButtonPushed','saleType':"pnD"})
+};
+
+
+
+
+
+
 // &rd="+pageUrl+"  - Add this back in the URL after testing.

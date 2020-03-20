@@ -35,13 +35,17 @@
   </h1>
 </div>
 <div>
-  <button class="sale-button" onclick="sale_sToD()"> TEST1 </button>
-  <button class="sale-button"> TEST2 </button>
+  <button class="sale-button" onclick="sale_sToD()"> Sale: subTotal orderDiscount</button>
+  <button class="sale-button" onclick="sale_sTiTD()"> Sale: subTotal itemTotalDiscount </button>
+  <button class="sale-button" onclick="sale_sTiD()"> Sale: subTotal itemDiscount </button>
+  <button class="sale-button" onclick="sale_sTnD()"> Sale: subTotal orderDiscount </button>
+  <button class="sale-button" onclick="sale_poD()"> Sale: price orderDiscount </button>
+  <button class="sale-button" onclick="sale_piTD()"> Sale: price itemTotalDiscount </button>
+  <button class="sale-button" onclick="sale_piD()"> Sale: price itemDiscount </button>
+  <button class="sale-button" onclick="sale_pnD()"> Sale: price noDiscount </button>
 
 
 </body>
-<script>
-function sale_sToD() {
-  dataLayer.push({'event':'saleButtonPushed','saleType':"sToD"})}
-  </script>
+
+<script src="/test/main.js"></script>
 </html>

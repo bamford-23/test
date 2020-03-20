@@ -47,6 +47,9 @@ function sale_piD() {
 function sale_pnD() {
   dataLayer.push({'event':'saleButtonPushed','saleType':"pnD"})
 };
+function magicTestButton() {
+  dataLayer.push({'event':'saleButtonPushed','saleType':"magicTest"})
+};
 
 
 

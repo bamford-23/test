@@ -63,7 +63,8 @@ function utm4(){
   window.location = "/test/sale_convert?utm_source=CHANNEL_4"
 };
 function iframeConv(){
-  dataLayer.push({'event':'saleButtonPushed','saleType':"iFrame"})
+  var clickid = document.location.search.match('irclick_id=(.*)&?')[1] || ""
+  dataLayer.push({'event':'saleButtonPushed','saleType':"iFrame",'clickid':clickid})
 };
 
 

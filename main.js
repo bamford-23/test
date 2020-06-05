@@ -50,6 +50,15 @@ function sale_pnD() {
 function magicTestButton() {
   dataLayer.push({'event':'saleButtonPushed','saleType':"magicTest"})
 };
+function pbc1() {
+  dataLayer.push({'event':'saleButtonPushed','saleType':"pbc1"})
+};
+function pbc2() {
+  dataLayer.push({'event':'saleButtonPushed','saleType':"pbc2"})
+};
+function pbc3() {
+  dataLayer.push({'event':'saleButtonPushed','saleType':"pbc3"})
+};
 function utm1(){
   window.location = "/test/sale_convert?utm_source=CHANNEL_1"
 };

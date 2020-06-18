@@ -52,7 +52,7 @@
     <script>
     function switchPageLead(){
       try {
-        window.location = "/test/lead_convert?clickId="+document.location.search.match('irclick_id=(.*)&?')[1];
+        window.location = "/test/lead_convert?clickId="+document.location.search.match('irclickid=(.*)&?')[1];
       }
       catch(err){
         window.location = "/test/lead_convert";

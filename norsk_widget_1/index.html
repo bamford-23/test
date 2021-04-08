@@ -1,16 +1,22 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<script type="text/javascript" async>
-  var referrer = document.referrer;
-  console.log(referrer)
 
-</script>
+  <script>
+  const urlParams = new URLSearchParams(window.location.search);
+  const mpid = urlParams.get('mpid');
+  const adid = urlParams.get('adid');
+  const cid = urlParams.get('cid');
+  const deeplink = urlParams.get('deeplink')
+  </script>
+
 
 
 </head>
 <body>
   <div>
+<a href="https://bamfordtestcampaign.sjv.io/c/" onclick="location.href=this.href+mpid+'/'+adid+'/'+cid+'?u='+deeplink;return false;" src="https://i.imgur.com/6MyFrBS.png"></a>
+
 <a href="https://imgur.com/WgTI8W1"><img src="https://i.imgur.com/6MyFrBS.png" title="source: imgur.com" /></a>
   </div>
 

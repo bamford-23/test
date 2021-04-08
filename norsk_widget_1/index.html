@@ -7,8 +7,11 @@
   const mpid = urlParams.get('mpid');
   const adid = urlParams.get('adid');
   const cid = urlParams.get('cid');
-  const deeplink = urlParams.get('deeplink')
-  console.log(`https://bamfordtestcampaign.sjv.io/c/${mpid}/${adid}/${cid}?u=${deeplink}`)
+  const deeplink = urlParams.get('deeplink');
+  trackinglink = "https://bamfordtestcampaign.sjv.io/c/${mpid}/${adid}/${cid}?u=${deeplink}"
+  document.write("<p>https://bamfordtestcampaign.sjv.io/c/${mpid}/${adid}/${cid}?u=${deeplink}</p>");
+  document.write(trackinglink);
+  console.log(`https://bamfordtestcampaign.sjv.io/c/${mpid}/${adid}/${cid}?u=${deeplink}`);
   </script>
 
 

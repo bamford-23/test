@@ -13,7 +13,9 @@
   console.log("Media partner Id: "+mpid);
   console.log("Flexi Ad Id: "+adid);
   console.log("Impact Program Id: "+cid);
-  console.log("Tracking Link: " + deeplink + destination+"&p.passthroughparam=passthroughvalue&ImpactId={{clickid}}");
+  console.log("Tracking Link: " + deeplink + destination+"&p.passthroughparam=passthroughvalue");
+  var trackinglink = deeplink+destoination+"&p.passthroughparam=passthroughvalue"
+  document.write("<div> <p> "+trackinglink+"<p>")
   </script>
 
 </head>

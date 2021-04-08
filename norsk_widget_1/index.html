@@ -8,12 +8,12 @@
   const adid = urlParams.get('adid');
   const cid = urlParams.get('cid');
   const deeplink = urlParams.get('deeplink');
-  const destination = encodeURIComponent('"https://www.norsk-tipping.no"');
+  const destination = encodeURIComponent('"https://www.norsk-tipping.no?landingpageparam=landingpagevalue"');
   console.log("Destination: "+destination);
   console.log("Media partner Id: "+mpid);
   console.log("Flexi Ad Id: "+adid);
   console.log("Impact Program Id: "+cid);
-  console.log("Tracking Link: " + deeplink + destination);
+  console.log("Tracking Link: " + deeplink + destination+"&p.passthroughparam=passthroughvalue");
   </script>
 
 </head>

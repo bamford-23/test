@@ -14,8 +14,9 @@
     console.log("Media partner Id: "+mpid);
     console.log("Flexi Ad Id: "+adid);
     console.log("Impact Program Id: "+cid);
-    console.log("Tracking Link: " + deeplink + destination+"&p.passthroughparam=passthroughvalue");
-    var trackinglink = deeplink+destination+"&p.passthroughparam=passthroughvalue"
+
+    var trackinglink = "https://bamfordtestcampaign.sjv.io/c/"+mpid+"/"+adid+"/"+cid+"?p.passthroughparam=passthroughvalue&u="+destination
+    console.log(trackinglink);
     document.write("<div> <p> "+trackinglink+"<p>")
     </script>
 

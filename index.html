@@ -24,6 +24,19 @@
 
     gtag('config', 'UA-162561675-1');
   </script>
+  <script>
+  function UserAction() {
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+           if (this.readyState == 4 && this.status == 200) {
+               alert(this.responseText);
+           }
+      };
+      xhttp.open("GET", "http://httpbin.org/get?key=key&value=value", true);
+      xhttp.setRequestHeader("Content-type", "application/json");
+      xhttp.send("http://httpbin.org/get?key=key&value=value");
+  }
+  </script>
 
 
 
@@ -92,6 +105,7 @@
 <img height="0" width="0" src="https://imp.pxf.io/i/2403817/907659/11059" style="position:absolute;visibility:hidden;" border="0" />
 
 <div class="button-group">
+  <button class="buttons" onclick="utm1()"> SA INTERVIEW TEST BUTTON</button>
 
   <p>Clear cookies and then hit one of these:</p>
   <button class="buttons" onclick="window.location.href='https://pb-campaign-1.sjv.io/c/2104944/833707/11594';"> PB 1 CAMPAIGN CLICK </button>
@@ -106,13 +120,14 @@
 
 
 
+
 </div>
  <div width="300" height="250">
     <!-- <iframe id="drums" width="1000" height="800" style="background-image:url(https://i.imgur.com/oJW0Rs4.png)"></iframe> -->
     <iframe id="adframe1" data-aa='946803' src='//ad.a-ads.com/946803?size=300x250' scrolling='no' style='width:300px; height:250px; border:0px; padding:0;overflow:hidden' allowtransparency='true'></iframe>
     <div id=adframe width="300" height="250">
     <iframe id="adframe2" data-aa='946789' src='//ad.a-ads.com/946789?size=300x250' scrolling='no' style='width:300px; height:250px; border:0px; padding:0;overflow:hidden' allowtransparency='true'></iframe>
-      <iframe id="tracking_link_test" src='https://bamfordtestcampaign.sjv.io/c/2104944/849322/11059?u=https%3A%2F%2Fbamford-23.github.io%2Ftest%2Fview_impression' scrolling='no' style='width:300px; height:250px; border:0px; padding:0;overflow:hidden' allowtransparency='true'></iframe>  
+      <iframe id="tracking_link_test" src='https://bamfordtestcampaign.sjv.io/c/2104944/849322/11059?u=https%3A%2F%2Fbamford-23.github.io%2Ftest%2Fview_impression' scrolling='no' style='width:300px; height:250px; border:0px; padding:0;overflow:hidden' allowtransparency='true'></iframe>
 
     </div>
   </div>

@@ -25,17 +25,14 @@
     gtag('config', 'UA-162561675-1');
   </script>
   <script>
-  function UserAction() {
-      var xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function() {
-           if (this.readyState == 4 && this.status == 200) {
-               alert(this.responseText);
-           }
-      };
-      xhttp.open("GET", "http://httpbin.org/get?key=key&value=value", true);
-      xhttp.setRequestHeader("Content-type", "application/json");
-      xhttp.send("http://httpbin.org/get?key=key&value=value");
-  }
+  function httpGet()
+{
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET", "http://httpbin.org/get?key=key&value=value", false ); // false for synchronous request
+    xmlHttp.send( null );
+    return xmlHttp.responseText;
+}
+  
   </script>
 
 

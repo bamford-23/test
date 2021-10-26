@@ -28,7 +28,7 @@
   function httpGet()
 {
     var xmlHttp = new XMLHttpRequest();
-    xmlHttp.open( "GET", "http://httpbin.org/get?key=key&value=value", false ); // false for synchronous request
+    xmlHttp.open( "GET", "https://httpbin.org/get?key=key&value=value", false ); // false for synchronous request
     xmlHttp.send( null );
     return xmlHttp.responseText;
 }

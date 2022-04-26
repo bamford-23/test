@@ -75,6 +75,23 @@ function iframeConv(){
   var clickid = document.location.search.match('irclickid=(.*?)[&|$]')[1] || ""
   dataLayer.push({'event':'saleButtonPushed','saleType':"iFrame",'clickid':clickid})
 };
+function switchPageLead(){
+  try {
+    window.location = "/test/lead_convert?clickId="+document.location.search.match('irclickid=(.*)&?')[1];
+  }
+  catch(err){
+    window.location = "/test/lead_convert";
+  }
+}
+function switchPageSale(){
+  try {
+    window.location = "https://bamfordtestcampaign.sjv.io/c/2104944/770648/11059?kw=awesome";
+  }
+  catch(err){
+    window.location = "/test/sale_convert";
+  }
+}
+
 
 
 

@@ -114,7 +114,37 @@ function getCookie(cname) {
 
 
 
+function httpGet(theUrl)
+ar http = new XMLHttpRequest();
+var url = 'https://trkapi.impact.com/PageLoad';
+var params = 'CampaignId=11059&CustomProfileId=ABCDEFG12345678&PageUrl=https://bamford-23.github.io/test/&EventDate=NOW';
+http.open('POST', url, true);
 
+//Send the proper header information along with the request
+http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+http.onreadystatechange = function() {//Call a function when the state changes.
+    if(http.readyState == 4 && http.status == 200) {
+        alert(http.responseText);
+    }
+}
+http.send(params);
+
+function pla(pageUrl){
+
+  var myHeaders = new Headers();
+  myHeaders.append("Accept", "application/json");
+
+  var requestOptions = {
+    method: 'POST',
+    headers: myHeaders,
+    redirect: 'follow'
+  };
+
+  fetch("https://trkapi.impact.com/PageLoad?CampaignId=11059&CustomProfileId=ABCDEFG12345678&PageUrl="+pageUrl+"&EventDate=NOW&ReferringUrl", requestOptions)
+    .then(response => response.text())
+    .then(result => console.log(result))
+    .catch(error => console.log('error', error));
+};
 
 
 

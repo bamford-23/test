@@ -110,7 +110,7 @@ function getCookie(cname) {
     }
   }
   return "";
-}
+};
 
 
 
@@ -129,7 +129,7 @@ http.onreadystatechange = function() {//Call a function when the state changes.
 }
 http.send(params);
 
-function pla(pageUrl){
+function pla(pageUrl) {
 
   var myHeaders = new Headers();
   myHeaders.append("Accept", "application/json");
@@ -144,7 +144,7 @@ function pla(pageUrl){
     .then(response => response.text())
     .then(result => console.log(result))
     .catch(error => console.log('error', error));
-};
+}
 
 
 

@@ -124,7 +124,7 @@ function pla(pageUrl) {
     redirect: 'follow'
   };
 
-  fetch("https://trkapi.impact.com/PageLoad?CampaignId=11059&CustomProfileId=tescoimgpixeltest&PageUrl="+pageUrl+"&EventDate=NOW&ReferringUrl", requestOptions)
+  fetch("https://trkapi.impact.com/PageLoad?CampaignId=11059&CustomProfileId=tescoimgpixeltest&PageUrl="+pageUrl+"&EventDate=NOW", requestOptions)
     .then(response => response.text())
     .then(result => console.log(result))
     .catch(error => console.log('error', error));

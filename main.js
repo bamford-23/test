@@ -130,7 +130,7 @@ function pla(pageUrl) {
     .catch(error => console.log('error', error));
 }
 
-function identify(clickid) {
+function identify(clickid,ts) {
 
   var myHeaders = new Headers();
   myHeaders.append("Accept", "application/json");
@@ -141,7 +141,7 @@ function identify(clickid) {
     redirect: 'follow'
   };
 
-  fetch("https://bamfordtestcampaign.sjv.io/xur/11059&clickid="+clickid+"&custid=forceidentitytest1", requestOptions)
+  fetch("https://bamfordtestcampaign.sjv.io/xur/11059&clickid="+clickid+"&custid=forceidentitytest1&_ir=U134%7C%7C"+ts, requestOptions)
     .then(response => response.text())
     .then(result => console.log(result))
     .catch(error => console.log('error', error));

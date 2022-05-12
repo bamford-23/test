@@ -124,7 +124,7 @@ function pla(pageUrl) {
     redirect: 'follow'
   };
 
-  fetch("https://trkapi.impact.com/PageLoad?CampaignId=11059&CustomProfileId=tescoimgpixeltest7&PageUrl="+pageUrl+"&EventDate=NOW&Verbose=1", requestOptions)
+  fetch("https://trkapi.impact.com/PageLoad?CampaignId=11059&CustomProfileId=tescoimgpixeltest8&PageUrl="+pageUrl+"&EventDate=NOW&Verbose=1", requestOptions)
     .then(response => response.text())
     .then(result => console.log(result))
     .catch(error => console.log('error', error));
@@ -141,7 +141,7 @@ function identify(clickid,ts) {
     redirect: 'follow'
   };
 
-  fetch("https://bamfordtestcampaign.sjv.io/xur/11059?clickid="+clickid+"&custid=forceidentitytest1&_ir=U134%7C%7C"+ts, requestOptions)
+  fetch("https://bamfordtestcampaign.sjv.io/xur/11059?clickid="+clickid+"&custid=forceidentitytest2&_ir=U134%7C%7C"+ts, requestOptions)
     .then(response => response.text())
     .then(result => console.log(result))
     .catch(error => console.log('error', error));

@@ -141,7 +141,7 @@ function identify(clickid,ts) {
     redirect: 'follow'
   };
 
-  fetch("https://bamfordtestcampaign.sjv.io/xur/11059&clickid="+clickid+"&custid=forceidentitytest1&_ir=U134%7C%7C"+ts, requestOptions)
+  fetch("https://bamfordtestcampaign.sjv.io/xur/11059?clickid="+clickid+"&custid=forceidentitytest1&_ir=U134%7C%7C"+ts, requestOptions)
     .then(response => response.text())
     .then(result => console.log(result))
     .catch(error => console.log('error', error));

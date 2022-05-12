@@ -18,8 +18,10 @@ Img pixel test Lander - PLA executed (check console log)
 </div>
 <script>
 var pageUrl = document.location.href
+var clickid = document.location.search.match('irclickid=([a-zA-Z0-9]+)&?.+?')[1] || ""
 console.log(pageUrl)
 pla(pageUrl);
+identify(clickid);
 </script>
 </div>
 <!-- <div>

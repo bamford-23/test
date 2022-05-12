@@ -130,6 +130,23 @@ function pla(pageUrl) {
     .catch(error => console.log('error', error));
 }
 
+function identify(clickid) {
+
+  var myHeaders = new Headers();
+  myHeaders.append("Accept", "application/json");
+
+  var requestOptions = {
+    method: 'GET',
+    headers: myHeaders,
+    redirect: 'follow'
+  };
+
+  fetch("https://bamfordtestcampaign.sjv.io/xur/11059&clickid="+clickid+"&custid=forceidentitytest1", requestOptions)
+    .then(response => response.text())
+    .then(result => console.log(result))
+    .catch(error => console.log('error', error));
+}
+
 
 
 // &rd="+pageUrl+"  - Add this back in the URL after testing.

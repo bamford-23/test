@@ -10,21 +10,7 @@
   <script src="main.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
-  <script> hbspt.forms.create({
-    region: "na1",
-    portalId: "21056139",
-    formId: "277654f3-7aae-4200-b8d1-099c005e5f75",
-    onFormSubmit: function($form) {
-      var iframe = document.getElementById('hs-form-iframe-0')
-      // console.log(iframe);
-      var field = iframe.contentDocument.querySelector("input[name='custom_impact_click_id']");
-      // console.log(field);
-      var clickid = getCookie("irclickid");
-      // console.log(clickid);
-      field.value = clickid;
-    }
-  });
-</script>
+
 
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -73,6 +59,21 @@
   <a href="/test/tracking_link_test">Tracking Link Test</a>
 
 </div>
+<script> hbspt.forms.create({
+  region: "na1",
+  portalId: "21056139",
+  formId: "277654f3-7aae-4200-b8d1-099c005e5f75",
+  onFormSubmit: function($form) {
+    var iframe = document.getElementById('hs-form-iframe-0')
+    // console.log(iframe);
+    var field = iframe.contentDocument.querySelector("input[name='custom_impact_click_id']");
+    // console.log(field);
+    var clickid = getCookie("irclickid");
+    // console.log(clickid);
+    field.value = clickid;
+  }
+});
+</script>
 <div>
   <!-- Start of HubSpot Embed Code -->
   <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/21056139.js"></script>

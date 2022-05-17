@@ -67,10 +67,12 @@
     var iframe = document.getElementById('hs-form-iframe-0')
     // console.log(iframe);
     var field = iframe.contentDocument.querySelector("input[name='custom_impact_click_id']");
+    var fieldb = iframe.contentDocument.querySelector("input[name='message']");
     // console.log(field);
     var clickid = getCookie("irclickid");
     // console.log(clickid);
     field.value = clickid;
+    fieldb.value = clickid;
   }
 });
 </script>

@@ -148,6 +148,12 @@ function identify(clickid,ts) {
     .catch(error => console.log('error', error));
 }
 
+function programasale(){
+  dataLayer.push({'event':'saleButtonPushed','saleType':"programasale"})
+};
+function programbsale(){
+  dataLayer.push({'event':'saleButtonPushed','saleType':"programbsale"})
+};
 
 
 // &rd="+pageUrl+"  - Add this back in the URL after testing.

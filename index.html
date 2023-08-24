@@ -1,17 +1,150 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+
+
   <link rel="stylesheet" href="main.css">
+  <script>
+    dataLayer = [];
+  </script>
+  <script src="main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P2829LG');</script>
+  <!-- End Google Tag Manager -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162561675-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-162561675-1');
+  </script>
+  <script>
+  function httpGet()
+{
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET", "https://httpbin.org/get?key=key&value=value", false ); // false for synchronous request
+    xmlHttp.send( null );
+    return xmlHttp.responseText;
+    console.log(xmlHttp.responseText);
+}
+  </script>
+
+
+<!--  UTT Bamford Display -->
+  <!-- <script type="text/javascript"> (function(a,b,c,d,e,f,g){e['ire_o']=c;e[c]=e[c]||function(){(e[c].a=e[c].a||[]).push(arguments)};f=d.createElement(b);g=d.getElementsByTagName(b)[0];f.async=1;f.src=a;g.parentNode.insertBefore(f,g);})('//d.impactradius-event.com/A1188627-e139-438b-a617-ffff0fd9f6541.js','script','ire',document,window); </script> -->
+
+<!--  UTT Bamford Demo -->
+  <script type="text/javascript"> (function(a,b,c,d,e,f,g){e['ire_o']=c;e[c]=e[c]||function(){(e[c].a=e[c].a||[]).push(arguments)};f=d.createElement(b);g=d.getElementsByTagName(b)[0];f.async=1;f.src=a;g.parentNode.insertBefore(f,g);})('//d.impactradius-event.com/A2073922-e045-477c-82ed-7910312bdf7465535.js','script','ire',document,window) ; </script>
+
 </head>
 <body>
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P2829LG" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="topnav">
+  <a class="active" href="/test">Home</a>
+  <a href="/test/lead_convert">Convert</a>
+  <a href="/test/mobile_test">Mobile Test</a>
+  <a href="/test/pla_lander">PLA Test Lander</a>
+  <a href="/test/tracking_link_test">Tracking Link Test</a>
+
+</div>
+<script> hbspt.forms.create({
+  region: "na1",
+  portalId: "21056139",
+  formId: "277654f3-7aae-4200-b8d1-099c005e5f75",
+  onFormSubmit: function($form) {
+    var iframe = document.getElementById('hs-form-iframe-0')
+    // console.log(iframe);
+    var field = iframe.contentDocument.querySelector("input[name='custom_impact_click_id']");
+    var fieldb = iframe.contentDocument.querySelector("input[name='message']");
+    // console.log(field);
+    var clickid = getCookie("irclickid");
+    // console.log(clickid);
+    field.value = clickid;
+    fieldb.value = clickid;
+  }
+});
+</script>
+<div>
+  <!-- Start of HubSpot Embed Code -->
+  <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/21056139.js"></script>
+<!-- End of HubSpot Embed Code -->
+
+<script>
+var clickid = document.location.search.match('irclickid=([-a-zA-Z0-9._~%]*)&?.+?')[1] || ""
+setCookie(clickid, 30);
+</script>
+<script>
+var irclickid = getCookie('irclickid');
+console.log(irclickid);
+dataLayer.push({'clickid':irclickid,'event':'clickIdReady'});
+</script>
+ <!-- PLA function -->
+<script>
+var pageUrl = document.location.href
+console.log(pageUrl)
+pla(pageUrl);
+</script>
+</div>
+
   <div>
-    <iframe id="drums" width="1000" height="800" style="background-image:url(https://i.imgur.com/oJW0Rs4.png)"></iframe>
+    <button class="button" type="button" onclick="switchPageLead();"> Submit Lead</button>
+    <button class="button" type="button" onclick="switchPageSale();"> Go through Tracking Link to Sale</button>
+
+</div>
+
+<div>
+<a href="https://bamfordtestcampaign.sjv.io/c/2698429/763668/11059?u=https://bamford-23.github.io/test/sale_convert" target="_top" id="889930"><img src="//a.impactradius-go.com/display-ad/11059-889930" border="0" alt="" width="200" height="200"/></a><img height="0" width="0" src="https://imp.pxf.io/i/2698429/889930/11059" style="position:absolute;visibility:hidden;" border="0" />
+</div>
+<div width="100" height="100">
+    <a href="https://bamfordtestcampaign.sjv.io/c/2104944/770648/11059?kw=awesome" id="770648"><img src="//a.impactradius-go.com/display-ad/11059-770648" alt="" width="100" height="100"/></a><img height="0" width="0" src="//imp.pxf.io/i/2104944/770648/11059" style="position:absolute;visibility:hidden;" border="0" />
+</div>
+<div width="100" height="100">
+<a href="https://bamfordtestcampaign.sjv.io/c/2403817/889930/11059?ee_cid=123abc" target="_top" id="889930"><img src="//a.impactradius-go.com/display-ad/11059-889930" border="0" alt="" width="200" height="200"/></a><img height="0" width="0" src="https://imp.pxf.io/i/2403817/889930/11059" style="position:absolute;visibility:hidden;" border="0" />
+</div>
+<h3 id="907659"><a href="https://bamfordtestcampaign.sjv.io/c/2403817/907659/11059?product=%7CProductTest&AE=%7CAE">meta Test</a></h3>
+<img height="0" width="0" src="https://imp.pxf.io/i/2403817/907659/11059" style="position:absolute;visibility:hidden;" border="0" />
+
+<div class="button-group">
+  <button class="buttons" onclick="httpGet()"> SA INTERVIEW TEST BUTTON</button>
+
+  <p>Clear cookies and then hit one of these:</p>
+  <button class="buttons" onclick="window.location.href='https://pb-campaign-1.sjv.io/c/2104944/833707/11594';"> PB 1 CAMPAIGN CLICK </button>
+  <button class="buttons" onclick="window.location.href='https://bamfordtestcampaign.sjv.io/c/2104944/849322/11059';"> LEAD CONVERT TRACKING LINK </button>
+  <button class="buttons" onclick="utm1()"> Press for CHANNEL_1</button>
+  <button class="buttons" onclick="utm2()"> Press for CHANNEL_2</button>
+  <button class="buttons" onclick="utm3()"> Press for CHANNEL_3</button>
+  <button class="buttons" onclick="utm4()"> Press for CHANNEL_4</button>
+  <button class="buttons" onclick="window.location.href='https://mastertest.pxf.io/c/2403817/906904/11180';"> BAMBI (MASTER) </button>
+  <button class="buttons" onclick="window.location.href='https://mastertest.pxf.io/c/2104944/906904/11180';"> MCBAMFORD (MASTER) </button>
+  <button class="buttons" onclick="window.location.href='https://mastertest.pxf.io/m6A2O';"> ROKT TEST (MASTER)</button>
+
+
+
+
+</div>
+ <div width="300" height="250">
+    <!-- <iframe id="drums" width="1000" height="800" style="background-image:url(https://i.imgur.com/oJW0Rs4.png)"></iframe> -->
     <iframe id="adframe1" data-aa='946803' src='//ad.a-ads.com/946803?size=300x250' scrolling='no' style='width:300px; height:250px; border:0px; padding:0;overflow:hidden' allowtransparency='true'></iframe>
     <div id=adframe width="300" height="250">
-      <iframe id="adframe2" data-aa='946789' src='//ad.a-ads.com/946789?size=300x250' scrolling='no' style='width:300px; height:250px; border:0px; padding:0;overflow:hidden' allowtransparency='true'></iframe>
+    <iframe id="adframe2" data-aa='946789' src='//ad.a-ads.com/946789?size=300x250' scrolling='no' style='width:300px; height:250px; border:0px; padding:0;overflow:hidden' allowtransparency='true'></iframe>
+      <iframe id="tracking_link_test" src='https://bamfordtestcampaign.sjv.io/c/2104944/849322/11059?u=https%3A%2F%2Fbamford-23.github.io%2Ftest%2Fview_impression' scrolling='no' style='width:300px; height:250px; border:0px; padding:0;overflow:hidden' allowtransparency='true'></iframe>
+
     </div>
   </div>
-  <script src="main.js"></script>
+
+
   <footer id="footer">
   </footer>
 
